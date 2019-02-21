@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,29 +12,55 @@
         android:hint="title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <EditText
         android:id="@+id/editTextMessage"
-        android:hint="message"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:hint="message" />
+
     <Button
         android:id="@+id/button_channel1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send on channel 1"/>
+        android:layout_alignStart="@+id/editTextTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="145dp"
+        android:text="send on channel 1" />
+
     <Button
         android:id="@+id/button_channel2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send on channel 2"/>
+        android:layout_alignStart="@+id/editTextTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="213dp"
+        android:text="send on channel 2" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_channel1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="402dp"
+        android:layout_marginEnd="-102dp"
+        android:text="No alarm set"
+        android:textSize="30sp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="168dp"
         android:text="time"
         android:textSize="30sp" />
 
@@ -44,10 +70,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="537dp"
         android:text="open time picked" />
 
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="46dp"
+        android:text="cancel alarm" />
 
 
-</LinearLayout>
+
+</RelativeLayout>
